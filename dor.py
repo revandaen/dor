@@ -14,6 +14,7 @@ M = "\033[3;1m"
 k = "\033[33;1m"
 kt = "\033[0;33m"
 a = "\033[30;1m"
+pi = "\033[35;1m"
 
 W = '\x1b[0m'
 R = '\x1b[31m'
@@ -66,10 +67,11 @@ def main_menu():
        
        
        slowprint (gt+"Menu Pilihan Provider:")
-       print (gt+"  ["+p+"1"+gt+"] "+p+"Tembak XL Work")
-       print (gt+"  ["+p+"2"+gt+"] "+p+"Telkomsel")
-       print (gt+"  ["+p+"3"+gt+"] "+p+"Waktu")
-       print (gt+"  ["+p+"0"+gt+"] "+p+"Keluar")
+       print (gt+"  ["+p+"1"+gt+"] "+pi+"Tembak XL")
+       print (gt+"  ["+p+"2"+gt+"] "+pi+"Tembak Telkomsel Maintenance")
+       print (gt+"  ["+p+"3"+gt+"] "+pi+"Waktu")
+       print (gt+"  ["+p+"4"+gt+"] "+pi+"Tembak Indosat Maintenance")
+       print (gt+"  ["+p+"0"+gt+"] "+pi+"Keluar")
       
     
     
@@ -91,17 +93,20 @@ def exec_menu(choice):
     return
 
 def menu_1():
-   slowprint("loading")
+   slowprint("Sabar Coookkk")
    os.system('cd xlotp;python app.py')
 
 def menu_2():
-    slowaprint("loading")
+    slowaprint("Sabar Coookkk")
     os.system('cd tsel;python app.py')
 def menu_3():
-    slowprint("loading")
+    slowprint("Sabar Coookkk")
     os.system('sh jam.sh;python app.py')
     return os.system('python app.py')
-
+def menu_4():
+    slowaprint("Sabar Coookkk")
+    os.system('cd isat;python app.py')
+	
 def exit():
     sys.exit()
 
@@ -113,6 +118,7 @@ menu_actions = {
     "1" : menu_1,
     "2" : menu_2,
     "3" : menu_3,
+    "4" : menu_4,	
     "0" : exit
 }
 
