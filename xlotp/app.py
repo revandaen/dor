@@ -42,25 +42,23 @@ def lodprint(s):
         time.sleep(7.0/90)
 
 semut=(gt+"""
- #####  ####### #     # #     # ####### 
-#     # #       ##   ## #     #    #    
-#       #       # # # # #     #    #    
- #####  #####   #  #  # #     #    #    
-      # #       #     # #     #    #    
-#     # #       #     # #     #    #    
- #####  ####### #     #  #####     #    
- =================================
+ #╦┌┐┌┌─┌─┐┬─┐┬ ┬┌─┐┬─┐
+  ║│││├─│ │├┬┘│││├─┤├┬┘
+  ╩┘└┘┴ └─┘┴└─┴┴┴┴ ┴┴└─
+  ╔╦╗┌─┐┌─┐┬  ┌─┐    ©2018
+   ║ │ ││ ││  └─┐   IWRTeam
+   ╩ └─┘└─┘┴─┘└─┘   -------
 """)
-l="Harap tunggu.."
+l="Sabar Coookkk.."
 
 def main_menu():
     clear()
     slowprints(semut)
     print(p+
-        "   Tembak Xl Mode Otp" +
+        "   Tembak Paket XL " +
         "\nPilih Salah Satu:"
         "\n  [1] Menu Beli Paket" + 
-        "\n  [2] Minta Otp Code" +
+        "\n  [2] Minta Kode OTP" +
         "\n  [3] Menu utama"
     )
     choice = str(input(" ex:1👉 "))
@@ -83,11 +81,11 @@ def menu_1():
     lodprint(l)
     clear()
     print(semut)
-    print(p+"Menu Beli Paket Xl")
+    print(p+"Menu Beli Paket XL")
     msisdn = str(input("Masukan No 62xx 👉 "))
     clear()
     print(semut)
-    po = str(input(p+"Masukan Kode Otp 👉 "))
+    po = str(input(p+"Masukan Kode OTP 👉 "))
     clear()
     print(semut)
     print (p+" 1.Xtra Kuota 30GB Rp. 10.000")
@@ -134,7 +132,7 @@ def menu_2():
     lodprint(l)
     clear()
     print(semut)
-    print(p+"Minta Kode Otp")
+    print(p+"Minta Kode OTP")
     msisdn = str(input("Masukan Nomor 62xx👉"))
     lodprint(l)
     xl = XL(msisdn)
