@@ -7,7 +7,7 @@ from xlpy import *
 import base64
 
 g = "\033[32;1m"
-gt = "bold.yellow"
+gt = "\033[36;5m"
 bt = "\033[34;1m"
 b = "\033[36;1m"
 m = "\033[31;1m"
