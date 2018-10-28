@@ -7,7 +7,7 @@ from xlpy import *
 import base64
 
 g = "\033[32;1m"
-gt = "\033[0;32m"
+gt = "bold.yellow"
 bt = "\033[34;1m"
 b = "\033[36;1m"
 m = "\033[31;1m"
@@ -42,7 +42,7 @@ def lodprint(s):
         time.sleep(7.0/90)
 
 semut=(gt+"""
- #╦┌┐┌┌─┌─┐┬─┐┬ ┬┌─┐┬─┐
+  ╦┌┐┌┌─┌─┐┬─┐┬ ┬┌─┐┬─┐
   ║│││├─│ │├┬┘│││├─┤├┬┘
   ╩┘└┘┴ └─┘┴└─┴┴┴┴ ┴┴└─
   ╔╦╗┌─┐┌─┐┬  ┌─┐    ©2018
@@ -88,15 +88,15 @@ def menu_1():
     po = str(input(p+"Masukan Kode OTP 👉 "))
     clear()
     print(semut)
-    print (p+" 1.Xtra Kuota 30GB Rp. 10.000")
-    print (p+" 2.Xtra 3GB 30day 22.900 ")
-    print (p+" 3.Xtra 5GB 30day 32.900 ")
-    print (p+" 4.Xtra 9GB 30day 52.900 ")
-    print (p+" 5.Xtra 17GB 30day 82.900 ")
-    print (p+" 6.Xtra 25GB 30day 102.900 ")
-    print (p+" 7.Kuota 700mb 10k")
-    print (p+" 8.xtra 10GB 30day 59k")
-    print (p+" 9.Manual service id")
+    print (p+" [1] Xtra Kuota 30GB Rp. 10.000")
+    print (p+" [2] Xtra 3GB 30day 22.900 ")
+    print (p+" [3] Xtra 5GB 30day 32.900 ")
+    print (p+" [4] Xtra 9GB 30day 52.900 ")
+    print (p+" [5] Xtra 17GB 30day 82.900 ")
+    print (p+" [6] Xtra 25GB 30day 102.900 ")
+    print (p+" [7] Xtra 700MB 10.000 ")
+    print (p+" [8] xtra 10GB 30day 59.000 ")
+    print (p+" [9] Manual service id")
     pkt = str(input("Pilih Sesuai Keinginan >> "))
     
     if pkt == '1':
